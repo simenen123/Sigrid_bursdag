@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />     
+    </head>
+    <body>
+        <div id="title">
+            <h1>
+                Noen har bursdag!!!
+            </h1>
+            <h3>spill spillet og finn ut av hvem</h3>
+            <p>Det er basically kryssord. Man har masse ord under og bokstavene i det gule området skal vise
+                fornavnet til personen som har bursdag.<br> Hvis man klarer å lage feil navn, så skjer det ingenting
+                og man må prøve på nytt.
+            </p>
+            <p2>btw, ikke dropp ordene på hverandre. En liten irriterende bug som er enda mer irriterende å fikse på og hadde ikke tid.</p2>
+        </div>
+        <div class="box">
+            <div id="gult_område"></div>
+            <div id="r1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="r2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="r3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="r4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="r5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="r6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div id="adjektivene" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)">
+            <p id="svar_1" draggable="true" ondragstart="drag(event)"><strong>Har drip</strong></p>
+            <p id="svar_2" draggable="true" ondragstart="drag(event)"><strong>Ganske morsom</strong></p>
+            <p id="svar_3" draggable="true" ondragstart="drag(event)"><strong>Insanely omtenksom</strong></p>
+            <p id="svar_4" draggable="true" ondragstart="drag(event)"><strong>Rå moves</strong></p>
+            <p id="svar_5" draggable="true" ondragstart="drag(event)"><strong>Inspirerende</strong></p>
+            <p id="svar_6" draggable="true" ondragstart="drag(event)"><strong>Dyktig</strong></p>
+            <p id="svar_7" draggable="true" ondragstart="drag(event)"><strong> Veldig irriterende</strong></p>
+            <p id="svar_8" draggable="true" ondragstart="drag(event)"><strong>Superkul</strong></p>
+            <p id="svar_9" draggable="true" ondragstart="drag(event)"><strong>Bruh'er ofte</strong></p>
+            <p id="svar_10" draggable="true" ondragstart="drag(event)"><strong>Særdeles tullete</strong></p>
+            <p id="svar_11" draggable="true" ondragstart="drag(event)"><strong>Uproffesjonell</strong></p>
+            <p id="svar_12" draggable="true" ondragstart="drag(event)"><strong>Nøytral</strong></p>
+        </div>
+        <button onclick="test()">
+            bruh
+        </button>
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="main.js">
+    </script>
+</html>
